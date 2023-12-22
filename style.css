@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
     --color-bg: #24273a;
     --color-fg: #D9E0EE;
@@ -10,7 +17,6 @@ html, body {
   background: var(--color-bg);
   color: var(--color-fg);
   font-family: "Ubuntu";
-  src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
   height: 100%;
   width: 100%;
   margin: 0;
