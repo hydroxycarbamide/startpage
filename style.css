@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 :root {
     --color-bg: #24273a;
     --color-fg: #D9E0EE;
@@ -13,6 +10,7 @@ html, body {
   background: var(--color-bg);
   color: var(--color-fg);
   font-family: "Ubuntu";
+  src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
   height: 100%;
   width: 100%;
   margin: 0;
@@ -146,10 +144,3 @@ a:hover {
   100% {
     opacity: 1;
   }
-}
-
-#Date {
-
-  font-family: 'Bebas Neue';
-  font-size: 40px;
-}
