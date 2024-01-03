@@ -41,8 +41,8 @@ const fetch = (req: Request) => {
 }
 
 Bun.serve({
-  port: 80,
-  hostname: "localhost",
+  port: Bun.env.PORT || 80,
+  hostname: Bun.env.HOSTNAME || "localhost",
   fetch
 });
 
