@@ -1,9 +1,11 @@
+console.log("Hello World!");
+
 const fetch = (req: Request) => {
   const url = new URL(req.url);
   const path = url.pathname;
 
-  if (path === "/")  {
-      return new Response(Bun.file("./index.html"), {
+  if (path === "/") {
+    return new Response(Bun.file("./index.html"), {
       headers: {
         "Content-Type": "text/html"
       }
@@ -39,7 +41,7 @@ const fetch = (req: Request) => {
 }
 
 Bun.serve({
-  port: 8888,
+  port: 80,
   hostname: "localhost",
   fetch
 });
