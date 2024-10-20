@@ -16,9 +16,8 @@ const fetch = (req: Request) => {
 
 Bun.serve({
   port: Bun.env.PORT || 80,
-  hostname: Bun.env.HOSTNAME || "localhost",
   static: {
-    "/api/healthcheck": new Response("All good!"),
+    "/healthcheck": new Response("All good!"),
     "/": new Response(await Bun.file("./src/index.html").bytes(), {
       headers: {
         "Content-Type": "text/html",
